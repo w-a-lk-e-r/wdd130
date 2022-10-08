@@ -1,0 +1,82 @@
+#background {
+    height: 725px;
+    background-color: #30505F;
+}
+body {
+    background-color: #FFFFFF;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    background-color: rgba(10, 194, 255,.9);
+}
+.logo {
+    width: 80px;
+}
+nav a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #30505F;
+}
+#hero-img {
+    width: 100%;
+}
+.home-title {
+    color: #0AC2FF;
+}
+h4 {
+    color: #30505F;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+.book, .join {
+    background-color: #FFFFFF;
+    color: #B88B65;
+    text-decoration: none;
+}
+.book:hover, .join:hover {
+    background-color: #FFFFFF;
+    color: #0AC2FF;
+}
+.icon {
+    width: 80px;
+}
+.msg {
+    background-color: #FFFFFF;
+}
+.msg h2 {
+    color: #0AC2FF;
+}
+.msg p {
+    color: #30505F;
+}
+footer {
+    background-color: #0AC2FF;
+    color: #30505F;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a:hover {
+    color: #30505F;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
