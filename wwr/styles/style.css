@@ -1,9 +1,11 @@
-#background {
-    height: 725px;
-    background-color: #30505F;
-}
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Noto+Sans+Mono&display=swap');
+
 body {
     background-color: #FFFFFF;
+    font-family: 'Noto Sans Mono', Arial, Georgia;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 #content {
     max-width: 1600px;
@@ -12,6 +14,9 @@ body {
 header {
     background-color: rgba(10, 194, 255,.9);
 }
+#logo_link {
+    padding-top: 5px;
+}
 .logo {
     width: 80px;
 }
@@ -19,6 +24,7 @@ nav a {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #FFFFFF;
@@ -29,9 +35,15 @@ nav a:hover {
 }
 .home-title {
     color: #0AC2FF;
+    font-family: Chewy, Arial, Georgia;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: #30505F;
+}    
+h2 {
+    margin: 0;    
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -46,26 +58,54 @@ main section {
     background-color: #FFFFFF;
     color: #B88B65;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #30505F;
     color: #0AC2FF;
 }
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #30505F;
+}
+main section img {
+    box-sizing: border-box;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+#background {
+    height: 725px;
+    background-color: #30505F;
+}
+.mountains {
+    padding: 50px 0;
 }
 .msg {
     background-color: #FFFFFF;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #0AC2FF;
+    font-family: Chewy, Arial, Georgia;
 }
 .msg p {
     color: #30505F;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #0AC2FF;
     color: #30505F;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #FFFFFF;
@@ -80,4 +120,7 @@ footer a:hover {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
