@@ -55,8 +55,8 @@ main section {
     text-align: center;
 }
 .book, .join {
-    background-color: #FFFFFF;
-    color: #B88B65;
+    background-color: #B88B65;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
