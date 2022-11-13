@@ -14,7 +14,7 @@ Fonts are separated by a & */
   --accent2-color: #B88B65;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Chewy;
+  --heading-font: Chewy, Arial, Georgia;
   --paragraph-font: "Noto Sans Mono", Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */

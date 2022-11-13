@@ -184,6 +184,77 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* styling specific for the River Adventures page */
+#page-header {
+    text-align: center;
+    font-family: Chewy, Arial, Georgia;
+    color: #30505F;
+    margin: 20px auto;
+}
+.heroImage {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.riverImage {
+    width: 100%;
+    height: auto;
+    border: 1px solid #B88B65;
+    box-shadow: 5px 5px 10px #B88B65;
+}
+.rivers-1 h2 {
+    background-color: #30505F;
+    font-family: Chewy, Arial, Georgia;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #B88B65;
+    box-shadow: 5px 5px 10px #B88B65;
+    margin-top: 75px;
+}
+.rivers-1 p {
+    text-indent: 50px;
+    text-align: justify;
+    font-family: "Noto Sans Mono", Helvetica, sans-serif;
+    color: #30505F;
+    font-size: 1em;
+    margin: auto 50px;
+    
+}
+.rivers-2 h2 {
+    background-color: #30505F;
+    font-family: Chewy, Arial, Georgia;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #B88B65;
+    box-shadow: 5px 5px 10px #B88B65;
+    margin-top: 75px;
+}
+.rivers-2 p {
+    text-indent: 50px;
+    text-align: justify;
+    font-family: "Noto Sans Mono", Helvetica, sans-serif;
+    color: #30505F;
+    font-size: 1em;
+    margin: auto 50px;
+}
+.rivers-3 h2 {
+    background-color: #30505F;
+    font-family: Chewy, Arial, Georgia;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #B88B65;
+    box-shadow: 5px 5px 10px #B88B65;
+    margin-top: 75px;
+}
+.rivers-3 p {
+    text-indent: 50px;
+    text-align: justify;
+    font-family: "Noto Sans Mono", Helvetica, sans-serif;
+    color: #30505F;
+    font-size: 1em;
+    margin: auto 50px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
