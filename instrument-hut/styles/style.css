@@ -55,7 +55,7 @@ header {
     padding: 10px;
 }
 #img_instruments {
-    max-width: auto;
+    max-width: 600px;
     height: auto;
     float: right;
     margin-right: 25px;
