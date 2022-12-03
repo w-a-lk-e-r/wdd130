@@ -15,6 +15,7 @@ header {
     grid-template-columns: 150px auto;
 }
 #logo {
+    grid-column: 1/2;
     width: 100px;
     height: auto;
 }
@@ -23,6 +24,7 @@ header {
     align-self: center;
 }
 .header_nav_links {
+    grid-column: 2/3;
     display: flex;
     justify-content: space-evenly;
 }
@@ -43,7 +45,7 @@ header {
     border-radius: 50px;
     text-decoration: none;
 }
-#headline1 {
+#home_headline, #sub-page1_headline {
     background-color: #FFFEEB;
     margin-left: 25px;
     margin-right: 25px;
@@ -55,33 +57,39 @@ header {
     padding: 10px;
 }
 #img_instruments {
-    max-width: 600px;
+    width: 600px;
     height: auto;
     float: right;
     margin-right: 25px;
-    padding-left: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: 3px groove #3B0066;
+    box-shadow: 3px 3px 3px #3B0066;
 }
 #img_music {
-    max-width: 600px;
+    width: 600px;
     height: auto;
     float: left;
-    margin-top: -60px;
     margin-left: 25px;
-    padding-right: 30px;
+    margin-right: 50px;
+    border: 3px groove #3B0066;
+    box-shadow: 3px 3px 3px #3B0066;
 }
 h2 {
     font-family: "Rancho", Georgia, "Times New Roman";
     color: #3B0066;
     font-size: 2em;
     margin-left: 25px;
-    padding-top: 15px;
+    margin-top: 50px;
     margin-bottom: -15px;
 }
 p {
     font-family: "Fira Code", Verdana, Arial;
     color: #0E2F0E;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -95,7 +103,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 10px lightgray;
     text-decoration: none;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-left: 50px;
   } 
 #component_buttons a:hover {
@@ -107,7 +115,7 @@ p {
 }
 footer {
     background-color: #3B0066;
-    margin-top: 50px;
+    margin-top: 75px;
     padding: 25px;
 }
 #cr_text {
@@ -151,4 +159,64 @@ footer {
     padding: 25px;
     border-radius: 50px;
     text-decoration: none;
+}
+
+/* additional code for sub-page1 */
+#sub-page1_main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#sub-page1_headline {
+    grid-column: 1/3;
+    text-align: center;
+}
+#img_guitars {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    width: 600px;
+    height: auto;
+    justify-self: right;
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-left: 50px;
+    border: 3px groove #3B0066;
+    box-shadow: 3px 3px 3px #3B0066;
+}
+#img_drums {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 600px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 25px;
+    border: 3px groove #3B0066;
+    box-shadow: 3px 3px 3px #3B0066;
+    position: relative;
+    animation-name: drums;
+    animation-duration: .1s;
+    animation-iteration-count: 50;
+}
+@keyframes drums {
+    0% {left: 0px; top: 0px;}
+    25% {left: 0px; top: 5px;}
+    50% {left: 5px; top: 5px;}
+    75% {left: 5px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+    #img_instruments, #img_music, #img_guitars, #img_drums {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #img_instruments, #img_music, #img_guitars, #img_drums {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #img_instruments, #img_music, #img_guitars, #img_drums {
+        width: 300px;
+    }
 }
