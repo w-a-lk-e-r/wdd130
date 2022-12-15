@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact Us | Instrument Hut</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img id="logo" src="images/logo.PNG" alt="Instrument Hut logo">
+            </a>
+            <nav class="header_nav_links">
+                <a href="index.html">Home</a>
+                <a href="string-percussion-instruments.html">String & Percussion Instruments</a>
+                <a href="wind-instruments.html">Wind Instruments</a>
+            </nav>
+        </header>
+        <main id="contact-page_main">
+            <form id="data" action="#" onsubmit="return false" method="post">
+                <div id="input">
+                    <label for="name">Name:</label>
+                    <input style="width: 200px;" type="text" id="name" name="name">     
+                    <br>
+                    <label for="mail">E-mail:</label>
+                    <input style="width: 200px;" type="email" id="mail" name="mail">
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" cols="75" rows="5"></textarea>
+                </div>
+                <div id="button">
+                    <input type="submit" value="Send Message">
+                </div>
+                <div id="alertMsg"></div>
+            </form>
+        </main>
+        <footer>
+            <p id="cr_text"><br>Instrument Hut &copy; 2022 / Jason Walker</p>
+            <a id="site-plan_link" href="site-plan.html">Site Plan</a>
+            <nav class="footer_nav_links">
+                <a href="string-percussion-instruments.html">String & Percussion Instruments</a>
+                <a href="wind-instruments.html">Wind Instruments</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </footer>
+    </div>
+    <script>
+        /* Practice form / data is not sent */
+        var form = document.getElementById("data");
+        var msg = document.getElementById("alertMsg");
+        form.addEventListener("submit", formReset);
+        function formReset() {
+            form.reset();
+            msg.innerHTML = "Thank you for contacting Instrument Hut!";
+            msg.style.display = "block";   
+        };
+    </script>
+</body>
+</html>

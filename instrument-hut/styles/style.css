@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 .page {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 header {
@@ -57,7 +57,7 @@ header {
     padding: 10px;
 }
 #img_instruments {
-    width: 600px;
+    max-width: 600px;
     height: auto;
     float: right;
     margin-right: 25px;
@@ -67,7 +67,7 @@ header {
     box-shadow: 3px 3px 3px #3B0066;
 }
 #img_music {
-    width: 600px;
+    max-width: 600px;
     height: auto;
     float: left;
     margin-left: 25px;
@@ -93,8 +93,11 @@ p {
     margin-left: 25px;
     margin-right: 25px;
 }
+#component_buttons {
+    display: flex;
+    justify-content: space-between;
+}
 #component_buttons a {
-    display: inline-block;
     background-color: #FFFEEB;
     color: #0E2F0E;
     font-size: 1.5em;
@@ -103,8 +106,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 10px lightgray;
     text-decoration: none;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 75px;
   } 
 #component_buttons a:hover {
     border: 3px solid #3B0066;
@@ -115,7 +117,7 @@ p {
 }
 footer {
     background-color: #3B0066;
-    margin-top: 75px;
+    margin-top: 50px;
     padding: 25px;
 }
 #cr_text {
@@ -173,7 +175,7 @@ footer {
 #img_guitars {
     grid-column: 2/3;
     grid-row: 2/5;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     justify-self: right;
     margin-top: 30px;
@@ -185,7 +187,7 @@ footer {
 #img_drums {
     grid-column: 1/2;
     grid-row: 3/4;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     margin-top: 30px;
     margin-left: 25px;
@@ -216,7 +218,7 @@ footer {
 #img_saxophone {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     justify-self: right;
     margin-top: 30px;
@@ -228,7 +230,7 @@ footer {
 #img_flute {
     grid-column: 1/2;
     grid-row: 3/4;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     margin-top: 50px;
     margin-left: 25px;
@@ -243,25 +245,45 @@ footer {
     margin-top: 100px;   
 }
 
+/* additional code for Contact page */
+#contact-page_main #input {
+    font-family: "Fira Code", Verdana, Arial;
+    color: #0E2F0E;
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#contact-page_main #button {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#alertMsg {
+    display: none;
+    font-family: "Fira Code", Verdana, Arial;
+    color: #0E2F0E;
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
 /* media queries */
 @media screen and (max-width: 1200px) {
     #img_instruments, #img_music,
     #img_guitars, #img_drums,
     #img_saxophone, #img_flute {
-        width: 500px;
+        max-width: 500px;
     }
 }
 @media screen and (max-width: 1000px) {
     #img_instruments, #img_music,
     #img_guitars, #img_drums,
     #img_saxophone, #img_flute {
-        width: 400px;
+        max-width: 400px;
     }
 }
-@media screen and (max-width: 800px) {
-    #img_instruments, #img_music,
-    #img_guitars, #img_drums,
-    #img_saxophone, #img_flute {
-        width: 300px;
+@media screen and (max-width: 700px) {
+    .header_nav_links {
+        display: flex;
+        flex-direction: column;
     }
-}
+}   
